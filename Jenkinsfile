@@ -10,7 +10,7 @@ pipeline {
         }
         stage('run') {
             steps {
-                echo 'Clarusway_Way to Reinvent Yourself retdidim'
+                echo 'Clarusway_Way to Reinvent Yourshfgelf retdidim'
                 sh 'python --version'
                 sh 'python pipeline.py'
             }
