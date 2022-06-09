@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('run') {
+        stage('runf') {
             steps {
                 echo 'Clarusway_Way to Reinvent Yourself didim'
                 sh 'python --version'
