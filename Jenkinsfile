@@ -1,25 +1,16 @@
 pipeline {
     agent any
     stages {
-        stage('runf') {
+        stage('build') {
             steps {
-                echo 'Clarusway_Way to Reinvent Yourself didim'
-                sh 'python --version'
-                sh 'python pipeline.py'
+                echo 'Compiling the java source code'
+                sh 'javac Hello.java'
             }
         }
         stage('run') {
             steps {
-                echo 'Clarusway_Way to Reinvent Yourgshfgelf retdidim'
-                sh 'python --version'
-                sh 'python pipeline.py'
-            }
-        }
-        stage('test') {
-            steps {
-                echo 'Clarusway_Way to Reinvent Youjhkglkjrgshfgelf retdidim'
-                sh 'python --version'
-                sh 'python pipeline.py'
+                echo 'Running the compiled java code.'
+                sh 'java Hello'
             }
         }
     }
